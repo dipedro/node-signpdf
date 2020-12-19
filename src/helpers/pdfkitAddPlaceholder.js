@@ -76,6 +76,8 @@ const pdfkitAddPlaceholder = ({
             .map(fieldId => new PDFKitReferenceMock(fieldId));
     }
 
+    const signatureName = 'Signature';
+
     // Generate signature annotation widget
     const widget = pdf.ref({
         Type: 'Annot',
